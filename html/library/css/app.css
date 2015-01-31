@@ -183,7 +183,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 1500px;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -5696,7 +5696,7 @@ ul.pagination li {
   /* line 168, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal, dialog {
     width: 80%;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5724,7 +5724,7 @@ ul.pagination li {
   /* line 183, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5734,7 +5734,7 @@ ul.pagination li {
   /* line 184, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5744,7 +5744,7 @@ ul.pagination li {
   /* line 185, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5754,7 +5754,7 @@ ul.pagination li {
   /* line 186, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5764,7 +5764,7 @@ ul.pagination li {
   /* line 187, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5784,7 +5784,7 @@ ul.pagination li {
   /* line 188, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 62.5rem;
+    max-width: 1500px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -7067,7 +7067,7 @@ meta.foundation-mq-topbar {
 
   /* line 477, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 1500px;
     margin: 0 auto;
     margin-bottom: 0;
   }
@@ -9576,25 +9576,30 @@ h4 {
   line-height: 1.2em;
 }
 
+/* line 24, ../scss/styles/base.scss */
+input, button, textarea, select, a {
+  outline: none;
+}
+
 /* ==========================================================================
    Landing Page Styles
    ========================================================================== */
-/* line 27, ../scss/styles/base.scss */
+/* line 29, ../scss/styles/base.scss */
 .landingPage {
   height: 400px;
   background: #ecf0f1;
   border-bottom: 5px solid #7f8c8d;
 }
-/* line 31, ../scss/styles/base.scss */
+/* line 33, ../scss/styles/base.scss */
 .landingPage h1, .landingPage h2, .landingPage h4 {
   color: #7f8c8d;
   text-align: center;
 }
-/* line 36, ../scss/styles/base.scss */
+/* line 38, ../scss/styles/base.scss */
 .landingPage h2 span.green {
   color: #1abc9c;
 }
-/* line 39, ../scss/styles/base.scss */
+/* line 41, ../scss/styles/base.scss */
 .landingPage h2 span.red {
   color: #e74c3c;
 }
@@ -9602,34 +9607,39 @@ h4 {
 /* ==========================================================================
    Battle Ground Style
    ========================================================================== */
-/* line 48, ../scss/styles/base.scss */
+/* line 50, ../scss/styles/base.scss */
 .underground {
   height: 400px;
   background: #1abc9c;
 }
 
-/* line 53, ../scss/styles/base.scss */
+/* line 55, ../scss/styles/base.scss */
 .battleArea {
   background: #bdc3c7;
   height: 100%;
   border-bottom: 5px solid #7f8c8d;
   border-top: 5px solid #7f8c8d;
 }
-/* line 58, ../scss/styles/base.scss */
+/* line 60, ../scss/styles/base.scss */
 .battleArea .lyricsUG {
   height: 195px;
   border: 2px solid #1abc9c;
   border-bottom: none;
   margin: 15px auto;
+  text-align: center;
 }
-/* line 64, ../scss/styles/base.scss */
+/* line 66, ../scss/styles/base.scss */
+.battleArea .lyricsUG h3 {
+  font-size: 14px;
+}
+/* line 70, ../scss/styles/base.scss */
 .battleArea .buttonArea {
   border-top: 2px solid #7f8c8d;
   border-bottom: 2px solid #7f8c8d;
   margin: 10px 0;
   text-align: center;
 }
-/* line 69, ../scss/styles/base.scss */
+/* line 75, ../scss/styles/base.scss */
 .battleArea .buttonArea button.generate {
   margin: 10px 0;
   text-align: center;
@@ -9638,39 +9648,70 @@ h4 {
   border-left: 2px solid #7f8c8d;
   border-top: none;
   border-bottom: none;
+  color: #7f8c8d;
 }
-/* line 77, ../scss/styles/base.scss */
+/* line 84, ../scss/styles/base.scss */
 .battleArea .buttonArea button.generate:hover {
   background: #7f8c8d;
   -webkit-animation: rubberBand 3s;
   animation: rubberBand 3s;
+  color: #ecf0f1;
 }
-/* line 82, ../scss/styles/base.scss */
+/* line 90, ../scss/styles/base.scss */
 .battleArea .buttonArea button.generate:active {
   background: #7f8c8d;
+  color: #ecf0f1;
 }
-/* line 85, ../scss/styles/base.scss */
+/* line 94, ../scss/styles/base.scss */
 .battleArea .buttonArea button.generate:visited {
   background: #7f8c8d;
 }
-/* line 90, ../scss/styles/base.scss */
+/* line 100, ../scss/styles/base.scss */
 .battleArea .lyricsMS {
   height: 195px;
   border: 2px solid #e74c3c;
   border-top: none;
   margin: 15px auto;
+  text-align: center;
+}
+/* line 106, ../scss/styles/base.scss */
+.battleArea .lyricsMS h3 {
+  font-size: 14px;
 }
 
-/* line 98, ../scss/styles/base.scss */
+/* line 112, ../scss/styles/base.scss */
 .mainStream {
   height: 400px;
   background: #e74c3c;
 }
 
 /* ==========================================================================
+ Footer Styles
+ ========================================================================== */
+/* line 122, ../scss/styles/base.scss */
+footer {
+  height: 60px;
+  background: #ecf0f1;
+  margin: 0;
+  border-top: 5px solid #7f8c8d;
+}
+/* line 127, ../scss/styles/base.scss */
+footer p {
+  text-align: center;
+  margin: 0;
+  font-size: 10px;
+  padding: 10px 0;
+}
+/* line 133, ../scss/styles/base.scss */
+footer p a {
+  font-size: 10px;
+  color: #1abc9c;
+}
+
+/* ==========================================================================
  Debug Styles
  ========================================================================== */
-/* line 106, ../scss/styles/base.scss */
+/* line 149, ../scss/styles/base.scss */
 #debug-message {
   position: fixed;
   bottom: 0;
@@ -9683,15 +9724,15 @@ h4 {
   color: #fff;
   background: pink;
 }
-/* line 117, ../scss/styles/base.scss */
+/* line 160, ../scss/styles/base.scss */
 #debug-message p {
   margin: 0;
 }
-/* line 120, ../scss/styles/base.scss */
+/* line 163, ../scss/styles/base.scss */
 #debug-message .small, #debug-message .medium, #debug-message .large, #debug-message .exlarge {
   display: none;
 }
-/* line 123, ../scss/styles/base.scss */
+/* line 166, ../scss/styles/base.scss */
 #debug-message .small {
   display: block;
 }
@@ -9726,18 +9767,27 @@ h4 {
   /* ==========================================================================
      Large Stylesheet (1024 - 1440)
      ========================================================================== */
+  /* line 9, ../scss/styles/large.scss */
+  .battleArea .lyricsUG h3 {
+    font-size: 23px;
+  }
+  /* line 18, ../scss/styles/large.scss */
+  .battleArea .lyricsMS h3 {
+    font-size: 23px;
+  }
+
   /* ==========================================================================
      Debug Styles
      ========================================================================== */
-  /* line 14, ../scss/styles/large.scss */
+  /* line 31, ../scss/styles/large.scss */
   #debug-message {
     background: lightgreen;
   }
-  /* line 16, ../scss/styles/large.scss */
+  /* line 33, ../scss/styles/large.scss */
   #debug-message .small, #debug-message .medium, #debug-message .exlarge {
     display: none;
   }
-  /* line 19, ../scss/styles/large.scss */
+  /* line 36, ../scss/styles/large.scss */
   #debug-message .large {
     display: block;
   }

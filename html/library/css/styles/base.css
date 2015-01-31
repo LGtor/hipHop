@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 29 of /Users/Logan/Desktop/hipHop/assets/html/library/scss/styles/base.scss
+        on line 31 of /Users/Logan/Desktop/hipHop/assets/html/library/scss/styles/base.scss
 
-24: /* ==========================================================================
-25:    Landing Page Styles
-26:    ========================================================================== *\/
-27: .landingPage {
-28:     height: 400px;
-29:     background: $white;
-30:     border-bottom: 5px solid $darkGrey;
-31:     h1, h2, h4 {
-32:         color: $darkGrey;
-33:         text-align: center;
-34:     }
+26: /* ==========================================================================
+27:    Landing Page Styles
+28:    ========================================================================== *\/
+29: .landingPage {
+30:     height: 400px;
+31:     background: $white;
+32:     border-bottom: 5px solid $darkGrey;
+33:     h1, h2, h4 {
+34:         color: $darkGrey;
+35:         text-align: center;
+36:     }
 
 Backtrace:
-/Users/Logan/Desktop/hipHop/assets/html/library/scss/styles/base.scss:29
+/Users/Logan/Desktop/hipHop/assets/html/library/scss/styles/base.scss:31
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -67,4 +67,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 29 of /Users/Logan/Desktop/hipHop/assets/html/library/scss/styles/base.scss\A \A 24: /* ==========================================================================\A 25:    Landing Page Styles\A 26:    ========================================================================== */\A 27: .landingPage {\A 28:     height: 400px;\A 29:     background: $white;\A 30:     border-bottom: 5px solid $darkGrey;\A 31:     h1, h2, h4 {\A 32:         color: $darkGrey;\A 33:         text-align: center;\A 34:     }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 31 of /Users/Logan/Desktop/hipHop/assets/html/library/scss/styles/base.scss\A \A 26: /* ==========================================================================\A 27:    Landing Page Styles\A 28:    ========================================================================== */\A 29: .landingPage {\A 30:     height: 400px;\A 31:     background: $white;\A 32:     border-bottom: 5px solid $darkGrey;\A 33:     h1, h2, h4 {\A 34:         color: $darkGrey;\A 35:         text-align: center;\A 36:     }"; }

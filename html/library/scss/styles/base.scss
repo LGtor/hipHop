@@ -21,6 +21,8 @@ h4 {
     line-height: 1.2em;
 }
 
+input, button, textarea, select, a { outline: none; }
+
 /* ==========================================================================
    Landing Page Styles
    ========================================================================== */
@@ -60,6 +62,10 @@ h4 {
         border: 2px solid $green;
         border-bottom: none;
         margin: 15px auto;
+        text-align:center;
+        h3{
+           font-size:14px;
+        }
     }
     .buttonArea {
         border-top: 2px solid $darkGrey;
@@ -74,16 +80,20 @@ h4 {
             border-left: 2px solid $darkGrey;
             border-top: none;
             border-bottom: none;
+            color:$darkGrey;
             &:hover {
                 background: $darkGrey;
                 -webkit-animation: rubberBand 3s;
                 animation: rubberBand 3s;
+                color:$white;
             }
             &:active {
                 background: $darkGrey;
+                color:$white;
             }
             &:visited {
                 background: $darkGrey;
+
             }
         }
     }
@@ -92,6 +102,10 @@ h4 {
         border: 2px solid $red;
         border-top: none;
         margin: 15px auto;
+         text-align:center;
+         h3{
+            font-size:14px;
+         }
     }
 }
 
@@ -99,6 +113,35 @@ h4 {
     height: 400px;
     background: $red;
 }
+
+
+
+/* ==========================================================================
+ Footer Styles
+ ========================================================================== */
+footer{
+    height: 60px;
+    background:$white;
+    margin:0;
+    border-top:5px solid $darkGrey;
+    p{
+        text-align:center;
+        margin:0;
+        font-size:10px;
+        padding: 10px 0;
+
+        a{
+             font-size:10px;
+             color:$green;
+        }
+    }
+}
+
+
+
+
+
+
 
 /* ==========================================================================
  Debug Styles

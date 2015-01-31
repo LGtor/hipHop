@@ -5,7 +5,7 @@ var console = console || { log: function() { 'use strict'; } };
 
 
 
-window.Foundation5Boilerplate = window.Foundation5Boilerplate || {};
+window.hipHop = window.hipHop || {};
 
 (function (s) {
 
@@ -49,56 +49,8 @@ window.Foundation5Boilerplate = window.Foundation5Boilerplate || {};
 
             },
 
-            // initInPageAnchors: function () {
-
-            //     if (this.settings.debug) { console.log('initInPageAnchors()'); }
-
-            //     var dest = 0;
-
-            //     $(this.elements.anchorLinks).click(function (e) {
-            //         e.preventDefault();
-            //         dest = $(this.hash).offset().top;
-            //         $('html, body').animate({
-            //             scrollTop: dest - 100
-            //         }, 2000, 'swing');
-            //     });
 
 
-
-
-            // },
-
-            // initScrollEvents: function () {
-
-            //     if (this.settings.debug) { console.log('initScrollEvents()'); }
-
-            //     var THIS = this;
-
-            //     $(window).scroll(function () {
-            //         if ($(this).scrollTop() > 0) {
-            //             THIS.elements.tabBar.addClass('shadow');
-            //         } else {
-            //             THIS.elements.tabBar.removeClass('shadow');
-            //         }
-            //     });
-
-            // },
-
-            // initResizeEvents: function () {
-
-            //     if (this.settings.debug) { console.log('initResizeEvents()'); }
-
-            //     var go,
-            //         THIS = this;
-
-            //     $(window).resize(function () {
-            //         clearTimeout(go);
-            //         go = setTimeout(function () {
-            //             //finished resizing, do something
-
-            //         }, 100);
-            //     });
-            // },
 
             initDebug: function () {
 
@@ -118,15 +70,89 @@ window.Foundation5Boilerplate = window.Foundation5Boilerplate || {};
 
     };
 
-}(Foundation5Boilerplate));
+}(hipHop));
 
 
 
 $(document).ready(function() {
     'use strict';
-    Foundation5Boilerplate.App().init();
+    hipHop.App().init();
 });
 
+
+var underground = [
+
+ { ugQuote:'Sign of the swine in the swarm, When a king is a whore who comply and conform, Miles outside of the eye of the storm, With a siphon to lure out a prize and award, While avoiding the vile and bizarre that is violence and war, True blue triumph is more! -Aesop Rock'},
+    { ugQuote: "I'm an example of a candle lit life with electric relaxation, brain trampled by devotion to remote control channel changin, something provoked the whole globe to lower expectations, damn, what's wrong with my generation? We was the cream of the crop but it seems we've been robbed...that's what happens when you trade in all your dreams for a job. -Eyedea"
+        }
+    //     { quote: ""
+    //         },
+    //         { quote: ""
+    //             },
+    //             { quote: ""
+    //                 },
+    //                 { quote: ""
+    //                     },
+    //                     { quote: ""
+    //                         },
+    //                         { quote: ""
+    //                             },
+    //                             { quote: ""
+    //                                 }
+];
+
+
+
+
+
+var undergroundApp = {
+ getQuote: function() {
+        var rand = Math.floor((Math.random() * (underground.length)));
+        return underground[rand].ugQuote;
+        
+
+    }
+};
+
+
+
+var mainstream= [
+
+// { quote: ""
+//     },
+//     { quote: ""
+//         },
+//         { quote: ""
+//             },
+//             { quote: ""
+//                 },
+//                 { quote: ""
+//                     },
+//                     { quote: ""
+//                         },
+//                         { quote: ""
+//                             },
+//                             { quote: ""
+//                                 },
+//                                 { quote: ""
+//                                     }
+];
+
+
+var mainStreamApp = {
+ getQuote: function() {
+        var rand = Math.floor((Math.random() * (mainstream.length)));
+        return mainstream[rand].quote;
+        
+
+    }
+};
+
+
+  $("#btn").click(function() {
+        $("#underground").text(undergroundApp.getQuote);
+        $("#mainstream").text(mainstreamApp.getQuote);
+  });
 
 
 
