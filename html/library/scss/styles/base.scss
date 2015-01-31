@@ -1,0 +1,126 @@
+/* ==========================================================================
+   Base Stylesheet (0 - 640)
+   ========================================================================== */
+h1 {
+    font-size: 35px;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 25px;
+    line-height: 1.2em;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 1.2em;
+}
+
+/* ==========================================================================
+   Landing Page Styles
+   ========================================================================== */
+.landingPage {
+    height: 400px;
+    background: $white;
+    border-bottom: 5px solid $darkGrey;
+    h1, h2, h4 {
+        color: $darkGrey;
+        text-align: center;
+    }
+    h2 {
+        span.green {
+            color: $green;
+        }
+        span.red {
+            color: $red;
+        }
+    }
+}
+
+/* ==========================================================================
+   Battle Ground Style
+   ========================================================================== */
+.underground {
+    height: 400px;
+    background: $green;
+}
+
+.battleArea {
+    background: $grey;
+    height: 100%;
+    border-bottom: 5px solid $darkGrey;
+    border-top: 5px solid $darkGrey;
+    .lyricsUG {
+        height: 195px;
+        border: 2px solid $green;
+        border-bottom: none;
+        margin: 15px auto;
+    }
+    .buttonArea {
+        border-top: 2px solid $darkGrey;
+        border-bottom: 2px solid $darkGrey;
+        margin: 10px 0;
+        text-align: center;
+        button.generate {
+            margin: 10px 0;
+            text-align: center;
+            background: $grey;
+            border-right: 2px solid $darkGrey;
+            border-left: 2px solid $darkGrey;
+            border-top: none;
+            border-bottom: none;
+            &:hover {
+                background: $darkGrey;
+                -webkit-animation: rubberBand 3s;
+                animation: rubberBand 3s;
+            }
+            &:active {
+                background: $darkGrey;
+            }
+            &:visited {
+                background: $darkGrey;
+            }
+        }
+    }
+    .lyricsMS {
+        height: 195px;
+        border: 2px solid $red;
+        border-top: none;
+        margin: 15px auto;
+    }
+}
+
+.mainStream {
+    height: 400px;
+    background: $red;
+}
+
+/* ==========================================================================
+ Debug Styles
+ ========================================================================== */
+#debug-message {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: #fff;
+    background: pink;
+    p {
+        margin: 0;
+    }
+    .small, .medium, .large, .exlarge {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+}
